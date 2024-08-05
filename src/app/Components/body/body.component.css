@@ -1,0 +1,188 @@
+.card {
+    border-radius: 25px;
+    height: 100%;
+  }
+  
+  .card img {
+    height: 300px; /* Establece un alto fijo para las imágenes */
+    object-fit: cover;
+  }
+  
+  .card-title a {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #333; /* Cambia el color del texto */
+  }
+  
+  .btn-primary {
+    background-color: #02c09a; /* Cambia el color de fondo del botón */
+    border: none;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #029481; /* Cambia el color de fondo del botón al pasar el mouse */
+  }
+  
+  .grow {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .grow:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .bg-light{
+    height: 100%;
+    width: 100%;
+    background-image: url('../../../assets/LogoFondo.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+h2{
+    color: white;
+    font-size: 2rem;
+}
+p{
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+
+
+/* Estilos para la sección de proyectos */  
+#proyectos .row {
+  margin-top: 2rem; /* Agrega espacio entre las filas de arriba y abajo */
+}
+
+/* Resto de tus estilos */
+#proyectos .display-6 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 2rem;
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+#proyectos .card {
+  border-radius: 25px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+#proyectos .card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+}
+
+#proyectos .card-title{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.4s ease-in-out;
+}
+
+
+
+/* Especialistas en  */
+.lineas-negocio {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.linea {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(2, 103, 170, 0.942);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.linea:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #f7f7f7;
+  border-color: rgba(2, 103, 170, 0.942)
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #141e30;
+  font-size: 24px;
+  margin: 0;
+}
+
+.linea h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #141e30;
+}
+
+.linea ul li:before {
+  content: "\2022";
+  color: #141e30;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+h1{
+
+  text-align: center;
+}
+
+
+
+.whatsapp-button {
+  
+  position: fixed;
+  bottom: 20px; 
+  right:  -230px; 
+  z-index: 999; /* Asegura que esté por encima*/
+  
+}
+
+
+/* Media queries para hacer ajustes en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .card img {
+    height: 200px;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  #proyectos .display-6 {
+    font-size: 2rem;
+  }
+
+  .linea {
+    flex: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+}
+
